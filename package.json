@@ -1,8 +1,29 @@
 {
-  "name": "ongo",
+  "name": "nodets-environment",
   "version": "1.0.0",
-  "main": "src/index.html",
-  "repository": "https://github.com/ongo-studio/ongo-studio.github.io.git",
-  "author": "Arthur Matias <ahmmfdc@gmail.com>",
-  "license": "MIT"
+  "description": "Environment base template for NodeJs with TypeScript",
+  "main": "src/main.ts",
+  "author": "Arthur Matias",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon",
+    "build": "npx webpack"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.6.1",
+    "nodemon": "^2.0.7",
+    "ts-loader": "^9.2.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
