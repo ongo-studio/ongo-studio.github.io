@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import MailController from './controller/Mail.controller';
 
 const app = express();
 const PORT = 3333;
@@ -17,5 +18,9 @@ app.listen(PORT, ()=>{
  * You can just use from here
  */
  app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/views/_template.html');
 });
+
+app.post('/api/send-mail', (req, res)=>{
+    let t = JSON.stringify(req.body);
+})
