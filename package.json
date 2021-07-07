@@ -8,9 +8,10 @@
   "private": false,
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build dist"
+    "build": "parcel build dist index.html"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.6",
     "parcel": "^2.0.0-beta.2",
     "parcel-bundler": "^1.12.5",
     "typescript": "^4.3.2"

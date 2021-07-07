@@ -1,7 +1,9 @@
-import { User } from './models/User';
+import CONFIG from './config';
+import { handleScroll } from './controller/Menu.controller';
+import { Menu } from './models/menu/Menu';
 
 window.onload = () => {
-    let title = document.querySelector("#title");
-    const USER = new User("User", 24);
-    if(title) title.innerHTML = USER.hello();
+    new Menu(CONFIG.menuItems)
 }
+
+$(handleScroll)
