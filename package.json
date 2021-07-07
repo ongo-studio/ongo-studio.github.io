@@ -1,29 +1,19 @@
 {
-  "name": "nodets-environment",
+  "name": "parcel-template",
   "version": "1.0.0",
-  "description": "Environment base template for NodeJs with TypeScript",
-  "main": "src/main.ts",
+  "description": "This project is a template for frontend development",
+  "main": "index.js",
   "author": "Arthur Matias",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon",
-    "build": "npx webpack"
+    "dev": "parcel index.html",
+    "build": "parcel build dist"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.10",
-    "@types/express": "^4.17.12",
-    "@types/node": "^15.6.1",
-    "nodemon": "^2.0.7",
-    "ts-loader": "^9.2.2",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.2",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-node-externals": "^3.0.0"
+    "parcel": "^2.0.0-beta.2",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.3.2"
   },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
-  }
+  "dependencies": {}
 }
