@@ -1,8 +1,0 @@
-{
-  "name": "ongo",
-  "version": "1.0.0",
-  "main": "src/index.html",
-  "repository": "https://github.com/ongo-studio/ongo-studio.github.io.git",
-  "author": "Arthur Matias <ahmmfdc@gmail.com>",
-  "license": "MIT"
-}

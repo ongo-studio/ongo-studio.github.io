@@ -1,0 +1,2 @@
+.container header{background-color:var(--gray);position:fixed;z-index:200;top:0;left:0;height:10vh;width:100%;display:flex;align-items:center;justify-content:space-between;padding:0 4rem}.container header #logo{grid-column-start:2}.container header #logo img{height:3rem}.container header nav a{color:var(--white);font-weight:500;text-decoration:none;font-size:1.2rem;margin-left:1rem;text-transform:uppercase;transition:.2s ease}.container header nav a.active,.container header nav a:hover{color:var(--main-color)}
+/*# sourceMappingURL=/topbar.aacac3c9.css.map */
