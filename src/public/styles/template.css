@@ -4,8 +4,11 @@
     --darker-main-color: #FAD774;
     --main-color: #FAD363;
     --lighter-main-color: #FAD363;
+    --secondary-color: #7591F4;
+    --darker-secondary-color: #6584F3;
     --white: #FDFDFD;
     --gray: #3E3746;
+    --light-gray: #685C76;
 }
 *{
     margin: 0;
@@ -49,9 +52,11 @@ main > section:nth-child(even){
     padding: 0 4rem;
     position: relative;
     width: 100%;
+    max-width: 100vw;
 }
 
 .container footer{
+    grid-column: 1 / 13;
     grid-row-start: 3;
     grid-row-end: 4;
 }

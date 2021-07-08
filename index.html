@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="./src/public/assets/ongo-black.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/public/assets/ongo-white.svg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>öngö</title>
@@ -13,18 +13,22 @@
     <link rel="stylesheet" href="./src/public/styles/topbar.css">
     <link rel="stylesheet" href="./src/public/styles/home.css">
     <link rel="stylesheet" href="./src/public/styles/about.css">
+
+
+    <link rel="stylesheet" href="./src/public/styles/contact.css">
+    <link rel="stylesheet" href="./src/public/styles/footer.css">
 </head>
 <body>
     <div class="container">
         <header>
             <div id="logo">
-                <img src="./src/public/assets/ongo-black.svg">
+                <img src="./src/public/assets/ongo-white.svg">
             </div>
-            <nav>
-                <!-- <a class="active nav-link" href="#home">Home</a>
+            <nav id="menu">
+                <a class="active nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#about">O que fazemos</a>
                 <a class="nav-link" href="#gallery">Galeria</a>
-                <a class="nav-link" href="#contact">Contato</a> -->
+                <a class="nav-link" href="#contact">Contato</a>
             </nav>
         </header>
         <main class="content">
@@ -90,10 +94,59 @@
             <section id="gallery"></section>
             <section id="contact">
                 <img class="asset-left" src="./src/public/assets/diagonal-traces.svg">
+
+                <form action="/api/send" method="post">
+                    <label>Entre em contato</label>
+                    <input required type="text" name="name" id="name" placeholder="Seu nome">
+                    <input required type="email" name="email" id="email" placeholder="Seu email">
+                    <textarea required name="message" id="message" placeholder="Descreva brevemente o motivo de seu contato ..."></textarea>
+                    <div>
+                        <label for="attatchments">
+                            anexar
+                        </label>
+                        <input type="file" name="attatchments" multiple id="attatchments">
+                        <button> 
+                            <!-- type="submit" -->
+                            <div></div>
+                            <div>
+                                Enviar
+                            </div>
+                        </button>
+                    </div>
+                </form>
+
             </section>
         </main>
         <footer>
-            
+            <img class="footer-circle" src="./src/public/assets/circle-x.svg">
+
+            <div class="footer-section">
+                <img src="./src/public/assets/ongo-white.svg" alt="">
+                <nav>
+                    <a class="active nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">O que fazemos</a>
+                    <a class="nav-link" href="#gallery">Galeria</a>
+                    <a class="nav-link" href="#contact">Contato</a>
+                </nav>
+                <div class="social-media">
+                    <a href="#">
+                        <img src="./src/public/assets/social-media-icons/Twitter.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./src/public/assets/social-media-icons/LinkedIn.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./src/public/assets/social-media-icons/Facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./src/public/assets/social-media-icons/Insta.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./src/public/assets/social-media-icons/Behance.svg" alt="">
+                    </a>
+                </div>
+                <p>Making companies fly since 2021</p>
+            </div>
         </footer>
     </div>
 

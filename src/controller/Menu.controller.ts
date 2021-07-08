@@ -5,19 +5,22 @@ function toggleActive(e: HTMLElement|JQuery<HTMLElement>){
 
 export function handleScroll(){
     $(window).on('scroll', ()=>{
-        $('.nav-link').each(function(i:number,e:HTMLElement):void{
+        $('#menu a').each(function(i:number,e:HTMLElement):void{
             let currEl = e.getAttribute('href');
-            if ( $(currEl).offset().top <= $('main').scrollTop()) {
-                // if(currLink === "#contact" && ($("main").scrollTop() < 1650)){
-                //     currLink = "#portfolio";
-                // }
-                toggleActive(e);
-            }
+            let navHeight = $('#menu').outerHeight();
+            let halfHeight = $(currEl).outerHeight()/2;
+            
+            if ( $(currEl).position().top <= ($(window).scrollTop() + navHeight) + halfHeight) {
+                    toggleActive(e);
+                }
       })
     })
+}
+
+export function handleMenuItemClick(){
     $('.nav-link').each((i,e)=>{
-      e.onclick = ()=>{
-          toggleActive(e);
-      }
-    })
+        e.onclick = ()=>{
+            toggleActive(e);
+        }
+      })
 }

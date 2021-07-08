@@ -1,9 +1,11 @@
 import CONFIG from './config';
-import { handleScroll } from './controller/Menu.controller';
-import { Menu } from './models/menu/Menu';
+import { handleFormSubmit } from './controller/Form.controller';
+import { handleMenuItemClick, handleScroll } from './controller/Menu.controller';
 
 window.onload = () => {
-    new Menu(CONFIG.menuItems)
+    
 }
 
 $(handleScroll)
+$(handleMenuItemClick)
+$(handleFormSubmit)

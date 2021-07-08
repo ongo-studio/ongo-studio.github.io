@@ -54,3 +54,21 @@
     height: 70px;
     background-color: gray;
 }
+
+@media screen and (max-width: 600px) {
+    #home{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-logo{
+        margin-bottom: 3rem;
+    }
+
+    .home-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

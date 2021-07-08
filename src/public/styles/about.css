@@ -18,8 +18,6 @@
     color: var(--white);
 }
 
-
-
 .about-section > img{
     height: 10rem;
 }
@@ -31,4 +29,35 @@
 .about-section > div p{
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    #about{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about-section{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .about-section > img{
+        height: 5rem;
+    }
+
+    .about-section > div{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 1rem;
+    }
+    
+    .about-section > div h2{
+        
+    }
 }
