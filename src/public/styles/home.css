@@ -15,6 +15,10 @@
 .home-section{
     display: flex;
     flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .home-section:first-of-type{
     align-items: flex-end;
@@ -50,9 +54,12 @@
 }
 
 .hexagon{
-    width: 70px;
-    height: 70px;
+    width: 3rem;
+    height: 3rem;
     background-color: gray;
+}
+.hexagon:last-of-type{
+    margin: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -63,6 +70,8 @@
 
     .home-logo{
         margin-bottom: 3rem;
+        width: 10rem;
+        align-self: center;
     }
 
     .home-section{

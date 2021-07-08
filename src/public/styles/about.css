@@ -37,7 +37,6 @@
         align-items: flex-start;
     }
     .about-section{
-        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         margin-top: 1rem;
@@ -45,8 +44,9 @@
 
     .about-section > img{
         height: 5rem;
+        margin-top: 2rem;
     }
-
+    
     .about-section > div{
         height: 100%;
         width: 100%;
@@ -54,10 +54,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        margin-left: 1rem;
     }
     
     .about-section > div h2{
-        
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    }
+    .about-section > div p{
+        font-size: 1rem;
     }
 }

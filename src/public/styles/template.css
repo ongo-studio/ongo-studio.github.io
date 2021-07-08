@@ -77,3 +77,19 @@ main > section:nth-child(even){
     bottom: 0;
     right: 4rem;
 }
+
+@media screen and (max-width: 600px) {
+    .container main section{
+        padding: 0 1rem;
+    }
+
+    .container header{
+        padding: 0 1rem !important;
+    }
+    .asset-right{
+        right: 1rem;
+    }
+    .asset-left{
+        left: 1rem;
+    }
+}
