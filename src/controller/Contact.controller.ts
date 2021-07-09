@@ -15,11 +15,8 @@ export default function Contact(){
                     ${CONFIG.contactContent.filesText}
                 </label>
                 <input type="file" name="attatchments" multiple id="attatchments">
-                <button> 
-                    <div></div>
-                    <div>
-                        ${CONFIG.contactContent.btnText}
-                    </div>
+                <button class="btn"> 
+                    ${CONFIG.contactContent.btnText}
                 </button>
             </div>
         `

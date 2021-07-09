@@ -1,7 +1,7 @@
 import { handleFormSubmit } from './controller/Form.controller';
 import Home from './controller/Home.controller';
 import Menu from './controller/Menu.controller';
-import About from './controller/About.controller';
+import Services from './controller/Services.controller';
 import Contact from './controller/Contact.controller';
 import Footer from './controller/Footer.controller'
 
@@ -20,9 +20,9 @@ let home = Home();
 
 $(home.renderHome);
 
-let about = About();
+let services = Services();
 
-$(about.renderAbout);
+$(services.renderAbout);
 
 let contact = Contact();
 

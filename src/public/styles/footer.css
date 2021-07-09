@@ -44,6 +44,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    z-index: 200;
 }
 .container > footer >div > p{
     margin-top: 1rem;
@@ -54,5 +55,9 @@
 @media screen and (max-width: 600px) {
     .footer-circle{
         width: 8rem;
+    }
+
+    .footer-section > div > a{
+        margin-right: 1rem;
     }
 }

@@ -2,14 +2,15 @@ const CONFIG = {
     menuItems: [
         'home',
         'about',
-        'gallery',
+        'services',
+        // 'gallery',
         'contact',
     ],
     homeContent: {
         greetings: 'Hello, we are öngö',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae nisl efficitur lectus lobortis auctor.'
     },
-    aboutContent: {
+    servicesContent: {
         cards: [
             {
                 title: "Desenvolvimento",

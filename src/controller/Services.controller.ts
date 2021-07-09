@@ -10,14 +10,14 @@ let imgs = [
     pen
 ]
 
-export default function About(){
+export default function Services(){
 
     function renderAbout(){
-        $('#about').append(getAbout())
+        $('#services').append(getServices())
     }
     function getCard(img:string, title:string, text:string){
         return `
-            <section class="about-section">
+            <section class="services-section">
                 <img src="${img}">
                 <div>
                     <h2>${title}</h2>
@@ -28,12 +28,12 @@ export default function About(){
             </section>
         `
     }
-    function getAbout():string{
-        let about:string = '';
-        CONFIG.aboutContent.cards.map((e,i)=>{
-            about += getCard(imgs[i], e.title, e.text)
+    function getServices():string{
+        let services:string = '';
+        CONFIG.servicesContent.cards.map((e,i)=>{
+            services += getCard(imgs[i], e.title, e.text)
         })
-        return about
+        return services
     }
 
     return {

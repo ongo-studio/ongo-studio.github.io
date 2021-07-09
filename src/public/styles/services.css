@@ -1,10 +1,10 @@
-#about{
+#services{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.about-section{
+.services-section{
     width: 100%;
     
     display: flex;
@@ -18,36 +18,37 @@
     color: var(--white);
 }
 
-.about-section > img{
+.services-section > img{
     height: 10rem;
 }
-.about-section > div h2{
+.services-section > div h2{
     font-size: 2rem;
     font-weight: 700;
     margin: 2rem 0;
 }
-.about-section > div p{
+.services-section > div p{
     font-size: 1.4rem;
     font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
-    #about{
+    #services{
         flex-direction: column;
         align-items: flex-start;
     }
-    .about-section{
+    .services-section{
         align-items: center;
         justify-content: space-between;
-        margin-top: 1rem;
+        margin-top: 2rem;
+        flex-direction: row;
     }
 
-    .about-section > img{
-        height: 5rem;
-        margin-top: 2rem;
+    .services-section > img{
+        height: 3rem;
+        margin-right: 2rem;
     }
     
-    .about-section > div{
+    .services-section > div{
         height: 100%;
         width: 100%;
         display: flex;
@@ -56,11 +57,12 @@
         justify-content: space-between;
     }
     
-    .about-section > div h2{
-        font-size: 1.6rem;
-        margin: 1rem 0;
-    }
-    .about-section > div p{
+    .services-section > div h2{
         font-size: 1rem;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+    .services-section > div p{
+        font-size: .8rem;
     }
 }

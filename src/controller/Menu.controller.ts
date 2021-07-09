@@ -41,7 +41,7 @@ export default function Menu(){
         $(e).toggleClass("active");
     }
     function renderMenu(){
-        $('#menu').append(getMenu());
+        $('nav').append(getMenu());
     }
     return {
         handleMenuItemClick,

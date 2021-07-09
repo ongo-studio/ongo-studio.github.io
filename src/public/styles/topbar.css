@@ -25,7 +25,7 @@
     height: 3rem;
 }
 
-.container header nav a{
+nav a{
     color: var(--white);
     font-weight: 500;
     text-decoration: none;
@@ -39,4 +39,10 @@
 .container header nav a:hover,
 .container header nav a.active{
     color: var(--main-color);
+}
+
+@media screen and (max-width: 600px) {
+    nav a{
+        display: none;
+    }
 }

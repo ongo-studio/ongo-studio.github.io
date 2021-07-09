@@ -54,8 +54,8 @@
 }
 
 .hexagon{
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     background-color: gray;
 }
 .hexagon:last-of-type{
@@ -79,5 +79,17 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    .home-section p{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .home-section h2{
+        font-size: 2rem;
+    }
+    .hexagon{
+        width: 2rem;
+        height: 2rem;
+        background-color: gray;
     }
 }
