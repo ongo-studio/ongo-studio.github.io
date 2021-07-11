@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
 
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
 }
 
 #contact form{
@@ -13,13 +13,11 @@
     grid-column: 2/3;
 }
 #contact form > label{
-    color: var(--white);
-    font-weight: 700;
-    font-size: 2rem;
     margin-bottom: 2rem;
 }
 #contact form input[type="email"],
 #contact form input[type="text"]{
+    border-radius: 6px;
     height: 3rem;
     background-color: var(--gray);
     outline: none;
@@ -66,6 +64,7 @@
 
     cursor: pointer;
 
+    border-radius: 6px;
     font-size: 1.2rem;
 }
 
@@ -77,6 +76,31 @@
 
 @media screen and (max-width: 600px) {
     #contact{
-        display: flex;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #contact{
+        padding: 1rem;
+    }
+    #contact form textarea{
+        height: 15rem;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    #contact form input[type="email"],
+    #contact form input[type="text"]{
+        height: 6rem;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    #contact form > div label{
+        padding: 1rem;
+        font-size: 2rem;
+        height: 6rem;
+        width: 12rem;
+    }
+    #contact form > label{
+        margin-bottom: 5rem;
     }
 }

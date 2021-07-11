@@ -1,13 +1,6 @@
 import Observer from "./Observer";
 
-interface ISubject{
-    collection: Observer[];
-    subscribe: (o: Observer)=>void;
-    unsubscribe: (o: Observer)=>void;
-    notifyObservers: ()=>void;
-}
-
-class Subject implements ISubject{
+class Subject{
     collection: Observer[] = [];
     subscribe(o:Observer){
         this.collection.push(o);

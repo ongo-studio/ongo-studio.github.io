@@ -1,7 +1,16 @@
 #services{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#services > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
 }
 
 .services-section{
@@ -36,6 +45,10 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    #services > div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .services-section{
         align-items: center;
         justify-content: space-between;
@@ -64,5 +77,17 @@
     }
     .services-section > div p{
         font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .services-section > div h2{
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 2rem 0;
+    }
+    .services-section > div p{
+        font-size: 1.8rem;
+        font-weight: 400;
     }
 }

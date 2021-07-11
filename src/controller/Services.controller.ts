@@ -1,8 +1,8 @@
 import CONFIG from "../config"
 
-let console = require('../public/assets/console.svg')
-let phone = require('../public/assets/phone.svg')
-let pen = require('../public/assets/pen.svg')
+let console = require('../public/assets/images/console.svg')
+let phone = require('../public/assets/images/phone.svg')
+let pen = require('../public/assets/images/pen.svg')
 
 let imgs = [
     console,
@@ -12,7 +12,7 @@ let imgs = [
 
 export default function Services(){
 
-    function renderAbout(){
+    function renderServices(){
         $('#services').append(getServices())
     }
     function getCard(img:string, title:string, text:string){
@@ -29,14 +29,15 @@ export default function Services(){
         `
     }
     function getServices():string{
-        let services:string = '';
+        let services:string = '<h2 class="title">What we do</h2><div>';
         CONFIG.servicesContent.cards.map((e,i)=>{
             services += getCard(imgs[i], e.title, e.text)
         })
+        services += '</div>'
         return services
     }
 
     return {
-        renderAbout
+        renderServices
     }
 }

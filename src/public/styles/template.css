@@ -62,6 +62,16 @@ main > section:nth-child(even){
     grid-row-end: 4;
 }
 
+.title{
+    color: var(--white);
+    
+    /* margin-bottom: 2rem; */
+    font-size: 3rem;
+    font-weight: 700;
+    align-self: center;
+    justify-self: center;
+}
+
 .asset-left{
     position: absolute;
     transform: translateY(-50%);
@@ -96,6 +106,8 @@ main > section:nth-child(even){
     font-weight: 700;
     font-size: 1.2rem;
     transition: ease .2s;
+
+    border-radius: 6px;
 }
 .btn:hover{
     background-color: var(--darker-main-color);
@@ -114,5 +126,20 @@ main > section:nth-child(even){
     }
     .asset-left{
         left: 1rem;
+    }
+    .title{
+        font-size: 2rem;
+        /* margin-bottom: 1rem; */
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .btn{
+        height: 6rem;
+        width: 12rem;
+        font-size: 2rem;
+    }
+    .title{
+        font-size: 4rem;
     }
 }

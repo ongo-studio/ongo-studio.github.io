@@ -7,8 +7,7 @@ const CONFIG = {
         'contact',
     ],
     homeContent: {
-        greetings: 'Hello, we are öngö',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae nisl efficitur lectus lobortis auctor.'
+        greetings: 'Hello, we are öngö'
     },
     servicesContent: {
         cards: [

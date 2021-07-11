@@ -6,7 +6,7 @@ export default function Contact(){
     }
     function getContact(){
         return `
-            <label>${CONFIG.contactContent.title}</label>
+            <label class="title">${CONFIG.contactContent.title}</label>
             <input required type="text" name="name" id="name" placeholder="${CONFIG.contactContent.namePlaceholder}">
             <input required type="email" name="email" id="email" placeholder="${CONFIG.contactContent.emailPlaceholder}">
             <textarea required name="message" id="message" placeholder="${CONFIG.contactContent.messagePlaceholder}"></textarea>

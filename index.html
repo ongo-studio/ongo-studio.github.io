@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="./src/public/assets/ongo-white.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/public/assets/images/ongo-white.svg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>öngö</title>
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./src/public/styles/template.css">
     <link rel="stylesheet" href="./src/public/styles/topbar.css">
     <link rel="stylesheet" href="./src/public/styles/home.css">
+    <link rel="stylesheet" href="./src/public/styles/about.css">
     <link rel="stylesheet" href="./src/public/styles/services.css">
 
 
@@ -28,7 +29,7 @@
     <div class="container">
         <header>
             <div id="logo">
-                <img src="./src/public/assets/ongo-white.svg">
+                <img src="./src/public/assets/images/ongo-white.svg">
             </div>
             <nav id="menu">
                 <!-- <a class="active nav-link" href="#home">Home</a>
@@ -39,32 +40,36 @@
         </header>
         <main class="content">
             <section id="home">
-                <!-- <section class="home-section">
-                    <img src="./src/public/assets/ongo-yellow.svg" class="home-logo">
-                </section>
-                <section class="home-section">
+                
+                <div class="home-separator">
                     <p class="code">
                         Hello,
                     </p>
-                    <h2>
-                        we are <b>öngö</b>
-                    </h2>
-                    <div class="home-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae nisl efficitur lectus lobortis auctor.
-                    </div>
-                    <div>
-                        <div class="hexagon"></div>
-                        <div class="hexagon"></div>
-                        <div class="hexagon"></div>
-                        <div class="hexagon"></div>
-                        <div class="hexagon"></div>
-                    </div>
-                </section>                 -->
+                </div>
+                <div class="home-separator">
+                    <h2>we are <b>öngö</b></h2>
+                </div>
                 
             </section>
             <section id="about">
-                <img class="asset-left" src="./src/public/assets/dots.svg">
-                <img class="asset-right" src="./src/public/assets/dash-dot.svg">
+                <img class="asset-left" src="./src/public/assets/images/dots.svg">
+
+                <div class="about-separator">
+                    <h2 class="title">About us</h2>
+                </div>
+                <div class="about-separator">
+                    <p id="about-txt" class="about-text code">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <img src="./src/public/assets/images/Box.svg" alt="Think out of the Box">
+                </div>
+
+                <img class="asset-right" src="./src/public/assets/images/dash-dot.svg">
             </section>
             <section id="services">
                 
@@ -102,7 +107,7 @@
             </section>
             <!-- <section id="gallery"></section> -->
             <section id="contact">
-                <img class="asset-left" src="./src/public/assets/diagonal-traces.svg">
+                <img class="asset-left" src="./src/public/assets/images/diagonal-traces.svg">
 
                 <form action="/api/send" method="post">
                     <!-- <label>Entre em contato</label>
@@ -126,10 +131,10 @@
             </section>
         </main>
         <footer>
-            <img class="footer-circle" src="./src/public/assets/circle-x.svg">
+            <img class="footer-circle" src="./src/public/assets/images/circle-x.svg">
 
             <div class="footer-section">
-                <img src="./src/public/assets/ongo-white.svg" alt="">
+                <img src="./src/public/assets/images/ongo-white.svg" alt="">
                 <nav>
                     <!-- <a class="active nav-link" href="#home">Home</a>
                     <a class="nav-link" href="#about">O que fazemos</a>
@@ -138,19 +143,19 @@
                 </nav>
                 <div class="social-media">
                     <a href="#">
-                        <img src="./src/public/assets/social-media-icons/Twitter.svg" alt="">
+                        <img src="./src/public/assets/images/social-media-icons/Twitter.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="./src/public/assets/social-media-icons/LinkedIn.svg" alt="">
+                        <img src="./src/public/assets/images/social-media-icons/LinkedIn.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="./src/public/assets/social-media-icons/Facebook.svg" alt="">
+                        <img src="./src/public/assets/images/social-media-icons/Facebook.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="./src/public/assets/social-media-icons/Insta.svg" alt="">
+                        <img src="./src/public/assets/images/social-media-icons/Insta.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="./src/public/assets/social-media-icons/Behance.svg" alt="">
+                        <img src="./src/public/assets/images/social-media-icons/Behance.svg" alt="">
                     </a>
                 </div>
                 <p>Making companies fly since 2021</p>

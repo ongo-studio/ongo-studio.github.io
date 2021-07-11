@@ -5,10 +5,6 @@ import Services from './controller/Services.controller';
 import Contact from './controller/Contact.controller';
 import Footer from './controller/Footer.controller'
 
-window.onload = () => {
-    
-}
-
 let menu = Menu();
 
 $(menu.renderMenu);
@@ -18,11 +14,11 @@ $(handleFormSubmit);
 
 let home = Home();
 
-$(home.renderHome);
+// $(home.renderHome);
 
 let services = Services();
 
-$(services.renderAbout);
+$(services.renderServices);
 
 let contact = Contact();
 

@@ -1,6 +1,6 @@
 import CONFIG from "../config";
 
-const logo = require('../public/assets/ongo-yellow.svg');
+const logo = require('../public/assets/images/ongo-yellow.svg');
 
 export default function Home(){
     let greetingArr = CONFIG.homeContent.greetings.split(" ");
