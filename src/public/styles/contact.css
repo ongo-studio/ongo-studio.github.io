@@ -77,6 +77,8 @@
 @media screen and (max-width: 600px) {
     #contact{
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 1600px) {
@@ -85,19 +87,19 @@
     }
     #contact form textarea{
         height: 15rem;
-        font-size: 2rem;
+        font-size: 1.6rem;
         padding: 1rem;
     }
     #contact form input[type="email"],
     #contact form input[type="text"]{
-        height: 6rem;
-        font-size: 2rem;
+        height: 4rem;
+        font-size: 1.6rem;
         padding: 1rem;
     }
     #contact form > div label{
         padding: 1rem;
         font-size: 2rem;
-        height: 6rem;
+        height: 4rem;
         width: 12rem;
     }
     #contact form > label{

@@ -1,40 +1,27 @@
 import CONFIG from "../config";
 
-const logo = require('../public/assets/images/ongo-yellow.svg');
+interface IHome{
+    greeting: string;
+}
 
-export default function Home(){
-    let greetingArr = CONFIG.homeContent.greetings.split(" ");
-    let fp = greetingArr.shift();
-    let lp = greetingArr.pop();
+export default function Home(conf: IHome){
+    let greeting: string = conf.greeting;
+    let greetingArr: string[] = greeting.split(" ");
+    //first part of the string
+    let fp:string = greetingArr.shift()
 
-    const renderHome = ():void => {
-        $('#home').append(getHome())
+    function renderHome ():void{
+        $('#home-greeting').text(getHomeGreeting())
+        $('#home-txt').html(getHomeTxt())
     }
-    const getHome = ():string => {
-        return `
-            <section class="home-section">
-                <img src="${logo}" class="home-logo">
-            </section>
-            <section class="home-section">
-                <p class="code">
-                    ${fp}
-                </p>
-                <h2>
-                    ${greetingArr.join()} <b>${lp}</b>
-                </h2>
-                <div class="home-text">
-                    ${CONFIG.homeContent.text}
-                </div>
-                <div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                    <div class="hexagon"></div>
-                </div>
-            </section>
-        `
+    function getHomeGreeting():string {
+        return fp;
     }
+    function getHomeTxt():string {
+        let greeting = greetingArr.join(" ");
+        return `<h2>${greeting} <b>öngö</b></h2>`
+    }
+
     return {
         renderHome
     }

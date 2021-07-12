@@ -1,27 +1,47 @@
 import CONFIG from "../config"
 
-export default function Contact(){
+interface IContact{
+    title: string;
+    filesText: string;
+    btnText: string;
+    namePlaceholder: string,
+    emailPlaceholder: string,
+    messagePlaceholder: string
+}
+
+export default function Contact(conf: IContact){
+
+    let title: string = conf.title
+    let filesText: string = conf.filesText
+    let btnText: string = conf.btnText
+
+    let namePlaceholder: string = conf.namePlaceholder;
+    let emailPlaceholder: string = conf.emailPlaceholder
+    let messagePlaceholder: string = conf.messagePlaceholder
+
     function renderContact(){
-        $('#contact form').append(getContact())
+        $('#form-title').text(getTexts().title);
+        $('#attachments-title').text(getTexts().filesText);
+        $('#submit-btn').text(getTexts().btnText);
+
+        $("#name").attr("placeholder", getTexts().namePlaceholder);
+        $("#email").attr("placeholder", getTexts().emailPlaceholder);
+        $("#message").attr("placeholder", getTexts().messagePlaceholder);
     }
-    function getContact(){
-        return `
-            <label class="title">${CONFIG.contactContent.title}</label>
-            <input required type="text" name="name" id="name" placeholder="${CONFIG.contactContent.namePlaceholder}">
-            <input required type="email" name="email" id="email" placeholder="${CONFIG.contactContent.emailPlaceholder}">
-            <textarea required name="message" id="message" placeholder="${CONFIG.contactContent.messagePlaceholder}"></textarea>
-            <div>
-                <label for="attatchments">
-                    ${CONFIG.contactContent.filesText}
-                </label>
-                <input type="file" name="attatchments" multiple id="attatchments">
-                <button class="btn"> 
-                    ${CONFIG.contactContent.btnText}
-                </button>
-            </div>
-        `
+    function getTexts(){
+        
+        return {
+            title,
+            filesText,
+            btnText,
+
+            namePlaceholder,
+            emailPlaceholder,
+            messagePlaceholder
+        }
     }
-    return {
+
+    return { 
         renderContact
     }
 }

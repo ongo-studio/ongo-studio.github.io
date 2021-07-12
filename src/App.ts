@@ -3,27 +3,24 @@ import Home from './controller/Home.controller';
 import Menu from './controller/Menu.controller';
 import Services from './controller/Services.controller';
 import Contact from './controller/Contact.controller';
-import Footer from './controller/Footer.controller'
+import CONFIG from './config';
+import About from './controller/About.controller';
+import Translation from './controller/Translation.controller';
 
-let menu = Menu();
+let menu = Menu(CONFIG.menuItems);
+let about = About(CONFIG.aboutContent)
+let home = Home(CONFIG.homeContent);
+let services = Services(CONFIG.servicesContent);
+let contact = Contact(CONFIG.contactContent);
+
 
 $(menu.renderMenu);
-$(menu.handleScroll);
+$(about.renderAbout);
 $(menu.handleMenuItemClick);
-$(handleFormSubmit);
+$(menu.handleScroll);
 
-let home = Home();
-
-// $(home.renderHome);
-
-let services = Services();
-
+$(home.renderHome);
 $(services.renderServices);
-
-let contact = Contact();
-
 $(contact.renderContact);
 
-let footer = Footer();
-
-$(footer.renderFooter);
+$(handleFormSubmit);

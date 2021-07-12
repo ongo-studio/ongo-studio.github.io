@@ -35,6 +35,13 @@
     .about-separator{
         flex-direction: column;
     }
+
+    .about-text{
+        margin-bottom: 2rem;
+    }
+    .about-separator img{
+        max-width: 50%;
+    }
 }
 
 @media screen and (min-width: 1600px) {

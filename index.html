@@ -42,11 +42,11 @@
             <section id="home">
                 
                 <div class="home-separator">
-                    <p class="code">
+                    <p id="home-greeting" class="code">
                         Hello,
                     </p>
                 </div>
-                <div class="home-separator">
+                <div id="home-txt" class="home-separator">
                     <h2>we are <b>öngö</b></h2>
                 </div>
                 
@@ -55,7 +55,7 @@
                 <img class="asset-left" src="./src/public/assets/images/dots.svg">
 
                 <div class="about-separator">
-                    <h2 class="title">About us</h2>
+                    <h2 id="about-title" class="title">About us</h2>
                 </div>
                 <div class="about-separator">
                     <p id="about-txt" class="about-text code">
@@ -110,22 +110,19 @@
                 <img class="asset-left" src="./src/public/assets/images/diagonal-traces.svg">
 
                 <form action="/api/send" method="post">
-                    <!-- <label>Entre em contato</label>
-                    <input required type="text" name="name" id="name" placeholder="Seu nome">
-                    <input required type="email" name="email" id="email" placeholder="Seu email">
-                    <textarea required name="message" id="message" placeholder="Descreva brevemente o motivo de seu contato ..."></textarea>
+                    <label id="form-title" class="title">Get in touch</label>
+                    <input required type="text" name="name" id="name" placeholder="Your name">
+                    <input required type="email" name="email" id="email" placeholder="Your email">
+                    <textarea required name="message" id="message" placeholder="Briefly describe the reason for your contact ..."></textarea>
                     <div>
-                        <label for="attatchments">
-                            anexar
+                        <label id="attachments-title" for="attatchments">
+                            attach
                         </label>
                         <input type="file" name="attatchments" multiple id="attatchments">
-                        <button> 
-                            <div></div>
-                            <div>
-                                Enviar
-                            </div>
+                        <button id="submit-btn" class="btn">
+                            send
                         </button>
-                    </div> -->
+                    </div>
                 </form>
 
             </section>
@@ -158,7 +155,7 @@
                         <img src="./src/public/assets/images/social-media-icons/Behance.svg" alt="">
                     </a>
                 </div>
-                <p>Making companies fly since 2021</p>
+                <p id="footer-txt">Making companies fly since 2021</p>
             </div>
         </footer>
     </div>

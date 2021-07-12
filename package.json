@@ -1,7 +1,7 @@
 {
-  "name": "parcel-template",
+  "name": "ongo-studio",
   "version": "1.0.0",
-  "description": "This project is a template for frontend development",
+  "description": "This is the homepage for öngö studio",
   "main": "index.js",
   "author": "Arthur Matias",
   "license": "MIT",
@@ -16,5 +16,8 @@
     "parcel-bundler": "^1.12.5",
     "typescript": "^4.3.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ibm-watson": "^6.1.1"
+  }
 }

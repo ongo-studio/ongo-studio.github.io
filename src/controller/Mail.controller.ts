@@ -4,7 +4,7 @@ export default class MailController implements IMail{
     from: string;
     message: string;
     attachments: FileList;
-    private constructor(from:string, message: string, attachments: FileList){
+    private constructor(from:string, message: string, attachments?: FileList){
         this.from = from;
         this.message = message;
         this.attachments = attachments;
