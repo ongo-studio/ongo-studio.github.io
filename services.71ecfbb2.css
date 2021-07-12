@@ -1,0 +1,95 @@
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#services > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.services-section{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--white);
+}
+
+.services-section > img{
+    height: 10rem;
+}
+.services-section > div h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+.services-section > div p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    #services{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #services > div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .services-section{
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        flex-direction: row;
+    }
+
+    .services-section > img{
+        height: 3rem;
+        margin-right: 2rem;
+    }
+    
+    .services-section > div{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .services-section > div h2{
+        font-size: 1rem;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+    .services-section > div p{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .services-section > div h2{
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 2rem 0;
+    }
+    .services-section > div p{
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+}
+
+/*# sourceMappingURL=/services.71ecfbb2.css.map */
